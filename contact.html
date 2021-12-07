@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Léa Lopez Thérapie Brève</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+
+    
+   <header>
+      <h1>Léa Lopez</h1>
+      <h2>Thérapie Brève</h2>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Accueil <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="about.html">A propos <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="coaching.html">Les Accompagnements & Coaching <span class="sr-only"></span></a>
+            </li>
+
+            <li class="nav-item active">
+              <a class="nav-link" href="pratiques.html">Les Pratiques <span class="sr-only"></span></a>
+            </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="contact.html">Contact<span class="sr-only"></span></a>
+              </li>
+          </ul>
+
+          <button>
+            Prendre Rendez-Vous
+        </button>
+          
+        </div>
+    </nav>
+
+ 
+    </header> 
+    <main class="d-flex flex-column align-items-center container">
+
+
+
+      <h3>Contact </h3>
+<!--         
+      <div class=container>
+        <div class="column">
+          <img src="/Images/cabinet.jpg" alt="">
+        </div>
+      
+      </div> -->
+
+              <!--Section: Contact v.2-->
+        <section class="bg-light p-3  " style="width: 80%;" >
+
+
+          <!--Section description-->
+          <p class="text-center w-responsive mx-auto mb-5">Afin de répondre au mieux à vos demandes, indiquez vos nom et prénom, votre âge et expliquez en quelques lignes vos besoins, demandes et/ou difficultés. Je vous répondrai dans un délai de 48h.</p>
+
+          <div class="row">
+
+              <!--Grid column--> 
+              <div class="col-md-8 mb-md-0 mb-5">
+                  <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                      <!--Grid row-->
+                      <div class="row">
+
+                          <!--Grid column-->
+                          <div class="col-md-6">
+                              <div class="md-form mb-0">
+                                  <input type="text" id="name" name="name" class="form-control">
+                                  <label for="name" class="">Your name</label>
+                              </div>
+                          </div>
+                          <!--Grid column-->
+
+                          <!--Grid column-->
+                          <div class="col-md-6">
+                              <div class="md-form mb-0">
+                                  <input type="text" id="email" name="email" class="form-control">
+                                  <label for="email" class="">Your email</label>
+                              </div>
+                          </div>
+                          <!--Grid column-->
+
+                      </div>
+                      <!--Grid row-->
+
+                      <!--Grid row-->
+                      <div class="row">
+                          <div class="col-md-12">
+                              <div class="md-form mb-0">
+                                  <input type="text" id="subject" name="subject" class="form-control">
+                                  <label for="subject" class="">Subject</label>
+                              </div>
+                          </div>
+                      </div>
+                      <!--Grid row-->
+
+                      <!--Grid row-->
+                      <div class="row">
+
+                          <!--Grid column-->
+                          <div class="col-md-12">
+
+                              <div class="md-form">
+                                  <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                  <label for="message">Your message</label>
+                              </div>
+
+                          </div>
+                      </div>
+                      <!--Grid row-->
+
+                  </form>
+
+                  <div class="text-center text-md-left">
+                      <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+                  </div>
+                  <div class="status"></div>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-md-4 text-center">
+                  <ul class="list-unstyled mb-0">
+                      <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                        <p><strong>La Station C</strong> <br>
+                          Centre des Arts et du bien-être <br>
+                          15 rue Plaine de Laden <br>
+                          CASTRES, 81100 <br>
+                          FRANCE
+                        </p>
+
+                        <a href="https://www.google.com/maps/place/La+Station+C/@43.5943316,2.2302017,17z/data=!3m1!4b1!4m5!3m4!1s0x12ae112450c61fab:0xadb3df1e4ee4cc9e!8m2!3d43.5944088!4d2.2322369" target="_blank"><p> Google Maps </p></a>
+                      </li>
+
+                      <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                          <p>+33 7 49 26 95 89</p>
+                      </li>
+
+                      <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                        <a href="https://www.facebook.com/lealopeztherapiebreve">
+                          <img src="/Images/facebook.png" alt="Facebook" width="30">
+                        </a>
+                    </li>
+
+                
+                  </ul>
+              </div>
+              <!--Grid column-->
+
+        
+
+          </div>
+
+        </section>
+        <!--Section: Contact v.2-->
+
+    </main>
+    <footer></footer>
+    
+</body>
+</html>
