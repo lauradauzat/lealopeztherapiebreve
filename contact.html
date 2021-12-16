@@ -6,54 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Léa Lopez Thérapie Brève</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-</head>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script> 
+        $(function(){
+          $("#header").load("header.html"); 
+        });
+    </script> 
+
+    <style>
+     body {
+        background-image: url(/lealopez/Images/cabinet.jpg);
+        background-size: cover; 
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+     }
+     #contact {
+        width: 80%; 
+        opacity: 80%;
+        border-radius: 2%;
+     }
+    </style>
+  </head>
 <body>
 
+    <div id="header"></div>
     
-   <header>
-      <h1>Léa Lopez</h1>
-      <h2>Thérapie Brève</h2>
-
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Accueil <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="about.html">A propos <span class="sr-only"></span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="coaching.html">Les Accompagnements & Coaching <span class="sr-only"></span></a>
-            </li>
-
-            <li class="nav-item active">
-              <a class="nav-link" href="pratiques.html">Les Pratiques <span class="sr-only"></span></a>
-            </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="contact.html">Contact<span class="sr-only"></span></a>
-              </li>
-          </ul>
-
-          <button>
-            Prendre Rendez-Vous
-        </button>
-          
-        </div>
-    </nav>
-
- 
-    </header> 
-    <main class="d-flex flex-column align-items-center container">
+    <main class="d-flex flex-column align-items-center container" >
 
 
 
-      <h3>Contact </h3>
+     
 <!--         
       <div class=container>
         <div class="column">
@@ -63,11 +45,20 @@
       </div> -->
 
               <!--Section: Contact v.2-->
-        <section class="bg-light p-3  " style="width: 80%;" >
+        <section id="contact" class="bg-light p-3  " >
 
+          <div class="text-center w-responsive mx-auto mb-5">
+
+            <h3>Contact</h3>
 
           <!--Section description-->
-          <p class="text-center w-responsive mx-auto mb-5">Afin de répondre au mieux à vos demandes, indiquez vos nom et prénom, votre âge et expliquez en quelques lignes vos besoins, demandes et/ou difficultés. Je vous répondrai dans un délai de 48h.</p>
+          <p>
+            Afin de répondre au mieux à vos demandes, indiquez vos nom et prénom, votre âge et expliquez en quelques lignes vos besoins, demandes et/ou difficultés. Je vous répondrai dans un délai de 48h.
+          </p>
+
+
+          </div>
+
 
           <div class="row">
 
@@ -82,7 +73,7 @@
                           <div class="col-md-6">
                               <div class="md-form mb-0">
                                   <input type="text" id="name" name="name" class="form-control">
-                                  <label for="name" class="">Your name</label>
+                                  <label for="name" class="">Nom</label>
                               </div>
                           </div>
                           <!--Grid column-->
@@ -91,7 +82,7 @@
                           <div class="col-md-6">
                               <div class="md-form mb-0">
                                   <input type="text" id="email" name="email" class="form-control">
-                                  <label for="email" class="">Your email</label>
+                                  <label for="email" class="">E-mail</label>
                               </div>
                           </div>
                           <!--Grid column-->
@@ -104,7 +95,7 @@
                           <div class="col-md-12">
                               <div class="md-form mb-0">
                                   <input type="text" id="subject" name="subject" class="form-control">
-                                  <label for="subject" class="">Subject</label>
+                                  <label for="subject" class="">Sujet</label>
                               </div>
                           </div>
                       </div>
@@ -118,7 +109,7 @@
 
                               <div class="md-form">
                                   <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                                  <label for="message">Your message</label>
+                                  <label for="message">Votre message</label>
                               </div>
 
                           </div>
@@ -154,7 +145,7 @@
 
                       <li><i class="fas fa-phone mt-4 fa-2x"></i>
                         <a href="https://www.facebook.com/lealopeztherapiebreve">
-                          <img src="/Images/facebook.png" alt="Facebook" width="30">
+                          <img src="Images/facebook.png" alt="Facebook" width="30">
                         </a>
                     </li>
 

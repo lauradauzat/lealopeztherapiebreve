@@ -6,62 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Léa Lopez Thérapie Brève</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script> 
+        $(function(){
+          $("#header").load("header.html"); 
+        });
+    </script> 
+    <style>
+      #profile-picture {
+        height: 300px;
+      }
+    </style>
+    
 </head>
 <body>
 
-    
-   <header>
-      <h1>Léa Lopez</h1>
-      <h2>Thérapie Brève</h2>
+   <div id="header"></div>
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Accueil <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="about.html">A propos <span class="sr-only"></span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="coaching.html">Les Accompagnements & Coaching <span class="sr-only"></span></a>
-            </li>
-
-            <li class="nav-item active">
-              <a class="nav-link" href="pratiques.html">Les Pratiques <span class="sr-only"></span></a>
-            </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="contact.html">Contact<span class="sr-only"></span></a>
-              </li>
-          </ul>
-
-          <button>
-            Prendre Rendez-Vous
-        </button>
-          
-        </div>
-    </nav>
- 
-    </header> 
     <main class="container">
 
       <h3>A propos </h3>
         
       <div class=container>
+
         <h4>Léa Lopez</h4>
-        <img src="/Images/photo-profil.jpg" alt="Photo de profil Léa Lopez">
-        <h5> Spécialisée en accompagnement de l’enfant et de la famille</h5>
-        <p>Après plus de 15 ans dans les métiers socio-éducatifs et la formation, la découverte de la Programmation Neurolinguistique a été pour moi l’ouverture d’un champ des possibles insoupçonné. Cette nouvelle vie m’a amenée à l’hypnose Ericksonienne; une révélation dans ma démarche d’accompagnement de l’être humain.
-            En liant P.N.L et hypnose à mon expérience auprès des enfants, des adolescents et des adultes, j’accompagne chaque personne à trouver ses ressources de changement, à surmonter ses difficultés de vie, à transe-former son parcours et à développer ses potentiels.  
-            Le respect de la différence de chaque être et de son libre arbitre est l’une de mes valeurs fondamentales dans ma pratique.
-            J’ai choisi de vous accueillir dans une atmosphère de bien être et de chaleur qui permet à chaque personne de s’y sentir libre et en toute confiance.
-            Il ne vous reste plus qu’à vous approprier ce lieu lors de vos séances comme un havre de paix, un espace de calme et un refuge de douceur.
-        </p>
+
+        <div class="container d-flex">
+          <img id="profile-picture" class="img-thumbnail" src="Images/photo-profil.jpg" alt="Photo de profil Léa Lopez">
+
+          <div class="container">
+            <h5> Spécialisée en accompagnement de l’enfant et de la famille</h5>
+            <p>Après plus de 15 ans dans les métiers socio-éducatifs et la formation, la découverte de la Programmation Neurolinguistique a été pour moi l’ouverture d’un champ des possibles insoupçonné. Cette nouvelle vie m’a amenée à l’hypnose Ericksonienne; une révélation dans ma démarche d’accompagnement de l’être humain.
+                En liant P.N.L et hypnose à mon expérience auprès des enfants, des adolescents et des adultes, j’accompagne chaque personne à trouver ses ressources de changement, à surmonter ses difficultés de vie, à transe-former son parcours et à développer ses potentiels.  
+                Le respect de la différence de chaque être et de son libre arbitre est l’une de mes valeurs fondamentales dans ma pratique.
+                J’ai choisi de vous accueillir dans une atmosphère de bien être et de chaleur qui permet à chaque personne de s’y sentir libre et en toute confiance.
+                Il ne vous reste plus qu’à vous approprier ce lieu lors de vos séances comme un havre de paix, un espace de calme et un refuge de douceur.
+            </p>
+          </div>
+        
+        </div>
+      
       </div>
 
 
