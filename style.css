@@ -1,0 +1,12 @@
+.card {
+    background-color: rgb(249, 252, 251);
+    padding: 15px;
+    margin: 20px 0;
+}
+
+span {
+    font-style: italic;
+    font-weight: bold;
+    color:rgb(14, 99, 71); 
+    padding: 10px;
+}
