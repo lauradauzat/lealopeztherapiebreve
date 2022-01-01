@@ -2,6 +2,8 @@
     background-color: rgb(249, 252, 251);
     padding: 15px;
     margin: 20px 0;
+    display: flex;
+    flex-direction: row;
 }
 
 span {
@@ -9,4 +11,18 @@ span {
     font-weight: bold;
     color:rgb(14, 99, 71); 
     padding: 10px;
+}
+
+.img-container {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    justify-content: right;
+
+}
+
+
+.img-container img {
+    width: 200px
 }
