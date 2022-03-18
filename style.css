@@ -200,11 +200,15 @@ span {
     margin: 10%; 
  }
 
- #pratiques .img-container {
-   margin-top: 30px;
+
+ .pratique-img-container {
+   margin: 30px 0;
+   display: flex;
+    justify-content: center;
+
  }
 
- #pratiques .img-container img {
+ .pratique-img-container img {
   width: 70%;
     max-height: 394px;
     object-fit: cover;
