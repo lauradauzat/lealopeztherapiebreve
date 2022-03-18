@@ -10,9 +10,10 @@
     <script> 
         $(function(){
           $("#header").load("header.html"); 
+          $("#footer").load("footer.html"); 
         });
     </script> 
-
+    <link rel="stylesheet" href="style.css">
     <style>
      body {
         background-image: url(/lealopez/Images/cabinet.jpg);
@@ -20,11 +21,7 @@
         background-position: center; /* Center the image */
         background-repeat: no-repeat; /* Do not repeat the image */
      }
-     #contact {
-        width: 80%; 
-        opacity: 80%;
-        border-radius: 2%;
-     }
+
     </style>
   </head>
 <body>
@@ -56,113 +53,42 @@
             Afin de répondre au mieux à vos demandes, indiquez vos nom et prénom, votre âge et expliquez en quelques lignes vos besoins, demandes et/ou difficultés. Je vous répondrai dans un délai de 48h.
           </p>
 
+          <p><a href="mailto:lealopez.hypno@gmail.com"  target=”_blank”> lealopez.hypno@gmail.com </a></p>
+          <ul class="list-unstyled mb-0">
+            <li><i class="fas fa-map-marker-alt fa-2x"></i>
+              <p><strong>La Station C</strong> <br>
+                Centre des Arts et du bien-être <br>
+                15 rue Plaine de Laden <br>
+                CASTRES, 81100 <br>
+                FRANCE
+              </p>
+
+              <a href="https://www.google.com/maps/place/La+Station+C/@43.5943316,2.2302017,17z/data=!3m1!4b1!4m5!3m4!1s0x12ae112450c61fab:0xadb3df1e4ee4cc9e!8m2!3d43.5944088!4d2.2322369" target="_blank"><p> Google Maps </p></a>
+            </li>
+
+            <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                <p>+33 7 49 26 95 89</p>
+            </li>
+
+            <li><i class="fas fa-phone mt-4 fa-2x"></i>
+              <a href="https://www.facebook.com/lealopeztherapiebreve">
+                <img src="Images/facebook.png" alt="Facebook" width="30">
+              </a>
+          </li>
+
+      
+        </ul>
 
           </div>
 
 
-          <div class="row">
 
-              <!--Grid column--> 
-              <div class="col-md-8 mb-md-0 mb-5">
-                  <form id="contact-form" name="contact-form" action="." method="POST">
-
-                      <!--Grid row-->
-                      <div class="row">
-
-                          <!--Grid column-->
-                          <div class="col-md-6">
-                              <div class="md-form mb-0">
-                                  <input type="text" id="name" name="name" class="form-control">
-                                  <label for="name" class="">Nom</label>
-                              </div>
-                          </div>
-                          <!--Grid column-->
-
-                          <!--Grid column-->
-                          <div class="col-md-6">
-                              <div class="md-form mb-0">
-                                  <input type="text" id="email" name="email" class="form-control">
-                                  <label for="email" class="">E-mail</label>
-                              </div>
-                          </div>
-                          <!--Grid column-->
-
-                      </div>
-                      <!--Grid row-->
-
-                      <!--Grid row-->
-                      <div class="row">
-                          <div class="col-md-12">
-                              <div class="md-form mb-0">
-                                  <input type="text" id="subject" name="subject" class="form-control">
-                                  <label for="subject" class="">Sujet</label>
-                              </div>
-                          </div>
-                      </div>
-                      <!--Grid row-->
-
-                      <!--Grid row-->
-                      <div class="row">
-
-                          <!--Grid column-->
-                          <div class="col-md-12">
-
-                              <div class="md-form">
-                                  <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                                  <label for="message">Votre message</label>
-                              </div>
-
-                          </div>
-                      </div>
-                      <!--Grid row-->
-
-                  </form>
-
-                  <div class="text-center text-md-left">
-                      <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
-                  </div>
-                  <div class="status"></div>
-              </div>
-              <!--Grid column-->
-
-              <!--Grid column-->
-              <div class="col-md-4 text-center">
-                  <ul class="list-unstyled mb-0">
-                      <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                        <p><strong>La Station C</strong> <br>
-                          Centre des Arts et du bien-être <br>
-                          15 rue Plaine de Laden <br>
-                          CASTRES, 81100 <br>
-                          FRANCE
-                        </p>
-
-                        <a href="https://www.google.com/maps/place/La+Station+C/@43.5943316,2.2302017,17z/data=!3m1!4b1!4m5!3m4!1s0x12ae112450c61fab:0xadb3df1e4ee4cc9e!8m2!3d43.5944088!4d2.2322369" target="_blank"><p> Google Maps </p></a>
-                      </li>
-
-                      <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                          <p>+33 7 49 26 95 89</p>
-                      </li>
-
-                      <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                        <a href="https://www.facebook.com/lealopeztherapiebreve">
-                          <img src="Images/facebook.png" alt="Facebook" width="30">
-                        </a>
-                    </li>
-
-                
-                  </ul>
-              </div>
-              <!--Grid column-->
-
-        
-
-          </div>
 
         </section>
         <!--Section: Contact v.2-->
 
     </main>
-    <footer></footer>
+    <div id="footer"></div>
     
 </body>
 </html>
