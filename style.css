@@ -70,6 +70,7 @@ h6 {
   margin: 20px 0;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: flex-end;
    border-radius: 10px;
    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;    
@@ -104,7 +105,7 @@ span {
     background-color: #29b4bed0;
 	display: flex;	
 	justify-content: center;
-	padding-bottom: 10px;
+
   }
   
   .topnav a {
@@ -114,10 +115,11 @@ span {
     align-items: center;
     color: #f2f2f2;
     text-align: center;
-    padding: 10px 16px;
+    margin: 10px 16px;
     text-decoration: none;
     font-size: 17px;
-    height: 40px;
+    height: fit-content;
+    max-height: 69px;
   }
   
   .topnav button {
@@ -179,12 +181,12 @@ span {
   }
   
   .topnav a:hover, .dropdown:hover .dropbtn {
-    background-color: #29b5be;
     color: white;
+    text-decoration: none;
   }
 
   .topnav #button:hover {
-    background-color: #29b4bed0;
+      background-color: unset;
   }
   
   .dropdown-content a:hover {
@@ -246,6 +248,19 @@ span {
    margin-top: 40px;
    font-size: small;
  }
+
+ #footer .rs-container {
+  display: flex;
+  gap: 10px;
+  }
+
+  #footer .rs-container i {
+    font-size: 30px;
+    }
+
+  #footer .rs-container i:hover {
+      color: #e5eeef
+  }
 
  #inline-button {
    cursor: pointer;
