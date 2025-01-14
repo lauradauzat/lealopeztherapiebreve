@@ -365,3 +365,19 @@ span {
 
    
   }
+
+
+  .header-image {
+    margin: 2em 0;
+}
+
+.axis-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 1em 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
