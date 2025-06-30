@@ -24,14 +24,14 @@ header #icon {
 
 h1, h2 {
   background-color:  #048b9a;
-  color: white !important;
+  color: white ;
   border-radius: 5px;
   padding: 10px;
 }
 
 h3 {
   background-color:  #048b9a;
-  color: white !important;
+  color: white ;
   border-radius: 5px;
 }
 
@@ -408,4 +408,88 @@ span {
 .header-image .pratique-img-container img {
   object-fit: cover;
   object-position: bottom;
+}
+
+/* Styles spécifiques pour la page CGV */
+.cgv-container {
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.cgv-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  background-color: white;
+  color: black;
+}
+
+.cgv-container h2 {
+  font-size: 1.4em;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: white;
+  color: black;
+}
+
+.cgv-container h3 {
+  font-size: 1.2em;
+  margin-top: 30px;
+  margin-bottom: 15px;
+ background-color: #ddd;
+ color: black;
+ border-radius: 5px;
+ padding: 10px;
+}
+
+.cgv-container p {
+  margin-bottom: 15px;
+  text-align: left;
+  width: -webkit-fill-available;
+}
+
+.cgv-container ul {
+  margin: 20px 0;
+  padding-left: 30px;
+}
+
+.cgv-container li {
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+
+
+.cgv-container em {
+  font-style: italic;
+  color: #666;
+  font-size: 0.95em;
+}
+
+
+
+/* Responsive pour la page CGV */
+@media screen and (max-width: 780px) {
+  .cgv-container {
+    padding: 0 15px;
+  }
+  
+  .cgv-container h1 {
+    font-size: 1.5em;
+  }
+  
+  .cgv-container h2 {
+    font-size: 1.3em;
+  }
+  
+  .cgv-container h3 {
+    font-size: 1.1em;
+  }
+  
+  .cgv-container ul {
+    padding-left: 20px;
+  }
+  
+
 }
